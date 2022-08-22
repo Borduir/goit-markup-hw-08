@@ -30,9 +30,36 @@ h6 {
   color: #212121;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .section {
     padding: 60px 15px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1140px) {
+  .container {
+    display: flex;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .vertical-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
   }
 }
 button {
@@ -57,8 +84,15 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
+@media (max-width: 767px) {
+  .title {
+    font-size: 28px;
+  }
+}
 .logo {
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -554,15 +588,49 @@ button {
   border-radius: 0px 0px 4px 4px;
 }
 
+@media (max-width: 767px) {
+  .team-section__item {
+    margin-top: 30px;
+  }
+}
+.team-section__person-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 1140px) {
+  .team-section__list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team-section__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 .team-section__person-name {
   font-size: 16px;
   font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.team-section__person-position {
+  margin-bottom: 16px;
 }
 
 .team-section__socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
   border-radius: 50%;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-section__socials-link:not(.last) {
+  margin-right: 10px;
 }
 
 .team-section__socials-link--selected:hover, .team-section__socials-link--selected:focus {
@@ -572,6 +640,7 @@ button {
 
 .socials-list {
   display: flex;
+  justify-content: center;
 }
 
 .clients-section__link {
@@ -586,9 +655,46 @@ button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.clients-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .clients-section__list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .clients-section__list {
+    max-width: 350px;
+  }
+}
+
 .clients-section__link--selected:hover, .clients-section__link--selected:focus {
   fill: #2196f3;
   border-color: #2196f3;
+}
+
+@media (max-width: 767px) {
+  .clients-section__list-item:nth-child(-n+4) {
+    margin-bottom: 30px;
+  }
+  .clients-section__list-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1139px) {
+  .clients-section__list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .clients-section__list-item:nth-child(-3n+3) {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1140px) {
+  .clients-section__list-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .page-footer {

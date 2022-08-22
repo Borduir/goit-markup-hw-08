@@ -1,0 +1,33 @@
+.doing-section__list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.doing-section__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.doing-section__data-container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.doing-section__data {
+  color: $--primary-white-color;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}

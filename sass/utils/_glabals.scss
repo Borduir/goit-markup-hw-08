@@ -30,7 +30,11 @@ h6 {
   color: $--title-text-color;
 }
 
-
+@media (max-width:479px) {
+  .section {
+    padding: 60px 15px;
+  }
+}
 
 // .container {
 

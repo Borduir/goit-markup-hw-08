@@ -30,6 +30,11 @@ h6 {
   color: #212121;
 }
 
+@media (max-width: 479px) {
+  .section {
+    padding: 60px 15px;
+  }
+}
 button {
   cursor: pointer;
 }
@@ -231,6 +236,9 @@ button {
     margin: auto;
     justify-content: center;
     align-items: center;
+  }
+  .hero-section {
+    padding: 0;
   }
 }
 @media (max-width: 1139px) {
@@ -453,14 +461,43 @@ button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 
 .qalities-section__icon-container {
   display: flex;
+  height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
+@media (max-width: 479px) {
+  .qalities-section__icon-container {
+    max-width: 450px;
+  }
+}
+@media (min-width: 1139px) {
+  .qalities-section__icon-container {
+    max-width: 270px;
+  }
+  .qalities-section__container {
+    display: flex;
+    justify-content: center;
+  }
+  .qalities-section__list {
+    display: flex;
+  }
+  .qalities-section__list-item {
+    max-width: 270px;
+    margin-bottom: 0;
+  }
+  .qalities-section__list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 .qalities-section__icon {
   display: flex;
 }

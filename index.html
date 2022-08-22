@@ -25,7 +25,14 @@
           <span class="logo--blue-text">Web</span
           ><span class="header__logo--black-text">Studio</span>
         </a>
-        <nav>
+        <button type="button" class="page-header__menu-button is-open" data-menu-button aria-expanded="false">
+          <svg width="40px" height="40px" area-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"/>
+            <use class="icon-cross" href="./images/icons.svg#icon-close-modal"/>
+          </svg>
+        </button>
+        <div class="page-header__menu-container is-open" data-menu>
+          <nav>
           <!-- about -->
           <ul class="nav__list">
             <li class="nav__list-item">
@@ -56,15 +63,49 @@
             >
           </li>
         </ul>
+        </div><div class="page-header__nav-contact-container">
+          
+        <nav class="page-header__nav">
+          <!-- about -->
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__link nav__link--current" href="./index.html">Студия</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Contacts -->
+        <ul class="contact__list">
+          <li class="contact__list-item">
+            <a class="contact__link" href="mailto:info@devstudio.com"
+              ><svg class="contact__icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-mail"/>
+            </svg>info@devstudio.com</a
+            >
+          </li>
+          <li class="contact__list-item">
+            <a class="contact__link" href="tel:+380961111111"
+              ><svg class="contact__icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-phone"/>
+            </svg>+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+         </div>
       </div>
     </header>
     <!-- Main -->
     <main>
       <!-- Hero (order section) -->
       <section class="section hero-section">
-        <div class="vertical-container">
+        <div class="hero-section__container vertical-container">
           <h1 class="hero-section__main-title">
-            Эффективные решения <br />
+            Эффективные решения 
             для вашего бизнеса
           </h1>
           <button class="hero-section__modal-button" data-modal-open type="button" name="button">Заказать услугу</button>
@@ -249,8 +290,8 @@
                 <img
                   src="./images/img(3).jpg"
                   alt="Игорь Демьяненко"
-                  width="270"
-                  height="260"
+                  max-width="270"
+                  max-height="260"
                 />
                 <div class="team-section__person-container">
                   <h3 class="team-section__person-name">Игорь Демьяненко</h3>
@@ -291,8 +332,8 @@
                 <img
                   src="./images/img(4).jpg"
                   alt="Ольга Репина"
-                  width="270"
-                  height="260"
+                  max-width="270"
+                  max-height="260"
                 />
                 <div class="team-section__person-container">
                   <h3 class="team-section__person-name">Ольга Репина</h3>
@@ -333,8 +374,8 @@
                 <img
                   src="./images/img(5).jpg"
                   alt="Николай Тарасов"
-                  width="270"
-                  height="260"
+                  max-width="270"
+                  max-height="260"
                 />
                 <div class="team-section__person-container">
                   <h3 class="team-section__person-name">Николай Тарасов</h3>
@@ -375,8 +416,8 @@
                 <img
                   src="./images/img(6).jpg"
                   alt="Михаил Ермаков"
-                  width="270"
-                  height="260"
+                  max-width="270"
+                  max-height="260"
                 />
                 <div class="team-section__person-container">
                   <h3 class="team-section__person-name">Михаил Ермаков</h3>
@@ -548,6 +589,7 @@
       </section>
     </div>
     </footer>
+      <script src="./js/mobile-menu.js"></script>
       <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -30,26 +30,35 @@ h6 {
   color: $--title-text-color;
 }
 
-.container {
-  display: flex;
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 15px;
-  padding-left: 15px;
-}
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
-.vertical-container {
-  display: flex;
-  flex-direction: column;
-}
+// .container {
+
+
+//   display: flex;
+//   max-width: 1200px;
+//   margin-right: auto;
+//   margin-left: auto;
+//   padding-top: 0;
+//   padding-bottom: 0;
+//   padding-right: 15px;
+//   padding-left: 15px;
+// }
+
+// .section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+
+// .vertical-container {
+//   max-width:480px;
+//       margin-left: auto;
+//     margin-right: auto;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//   display: flex;
+//   flex-direction: column;
+// }
 
 button {
   cursor: pointer;
@@ -73,7 +82,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
 }
 
 .logo {

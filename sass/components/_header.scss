@@ -63,7 +63,6 @@
 }
 }
 
-
 .contact__link {
   display: flex;
   align-items: center;
@@ -145,8 +144,6 @@
 }
 
 .is-open {
-  
-    display: block;
   & .icon-cross {
     display: block;
   }
@@ -155,3 +152,7 @@
   }
 }
 
+.page-header__menu-container.is-open {
+    display: block;
+    padding: 48px 40px;
+}

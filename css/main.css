@@ -20,6 +20,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h2,
@@ -734,6 +736,10 @@ button {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
+}
+
+.doing-section__img {
+  max-width: 100%;
 }
 
 .team-section {

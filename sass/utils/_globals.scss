@@ -29,44 +29,42 @@ h5,
 h6 {
   color: $--title-text-color;
 }
- .section {
+.section {
   @media (max-width: 1140px) {
-  padding: 60px 15px;
-         margin-left: auto;
-       margin-right: auto;
+    padding: 60px 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
-@media (max-width: 768px) {
-       max-width: 480px;
-
+  @media (max-width: 768px) {
+    max-width: 480px;
   }
-
 }
 
 @media (min-width: 1140px) {
   .container {
-  display: flex;
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 15px;
-  padding-left: 15px;
-}
+    display: flex;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
-.vertical-container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: flex;
-  flex-direction: column;
-}
+  .vertical-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 button {
@@ -93,12 +91,10 @@ button {
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
-  @media (max-width: 1140px) { 
+  @media (max-width: 1140px) {
     font-size: 28px;
+  }
 }
-}
-
-
 
 .logo {
   font-family: Raleway, sans-serif;

@@ -92,12 +92,12 @@ button {
   margin-bottom: 50px;
   text-align: center;
 }
-
-@media (max-width: 767px) {
+@media (max-width: 1140px) {
   .title {
     font-size: 28px;
   }
 }
+
 .logo {
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -740,6 +740,14 @@ button {
   background-color: #f5f4fa;
 }
 
+@media (min-width: 768px) and (max-width: 1140px) {
+  .team-section__list-container {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .team-section__item {
   background-color: #ffffff;
   line-height: 1.19;
@@ -759,16 +767,37 @@ button {
   padding-bottom: 30px;
 }
 
+@media (max-width: 1140px) {
+  .team-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 @media (min-width: 1140px) {
   .team-section__list {
     display: flex;
     margin-left: auto;
     margin-right: auto;
   }
+}
+@media (min-width: 1140px) {
   .team-section__item:not(:last-child) {
     margin-right: 30px;
   }
 }
+@media (max-width: 1140px) {
+  .team-section__item {
+    max-width: 354px;
+  }
+  .team-section__item:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+  .team-section__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+
 .team-section__person-name {
   font-size: 16px;
   font-weight: 500;

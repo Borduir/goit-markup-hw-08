@@ -93,13 +93,12 @@ button {
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
+  @media (max-width: 1140px) { 
+    font-size: 28px;
+}
 }
 
-@media (max-width: 767px) {
-  .title {
-    font-size: 28px;
-  }
-}
+
 
 .logo {
   font-family: Raleway, sans-serif;

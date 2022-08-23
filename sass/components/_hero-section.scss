@@ -95,8 +95,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 76.5vh;
   background-color: $--primary-white-color;
   border-radius: 4px;
   padding: 40px;
@@ -180,7 +180,10 @@
 
 .modal-form__checkbox-icon {
   position: absolute;
+  left: 0;
+  @media (min-width: 1140) {
   left: 12px;
+  }
   bottom: 5px;
   &--checked {
     visibility: hidden;
@@ -197,11 +200,14 @@
 }
 
 .modal-form__checkbox-data {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 171%;
   letter-spacing: 0.03em;
-  margin-right: 11px;
   margin-left: auto;
+  @media (min-width: 1140) {
+    font-size: 14px;
+    margin-right: 11px;
+  }
 }
 
 .modal-form__checkbox-link {

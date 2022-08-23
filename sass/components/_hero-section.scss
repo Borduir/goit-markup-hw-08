@@ -5,6 +5,10 @@
   background-position: 50% 50%;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  @media (min-width: 1140px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero-section__main-title {
@@ -46,16 +50,12 @@
 .hero-section__main-title {
   max-width: 696px;  
   font-size: 44px;
-  .hero-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
   .hero-section__modal-button {
     min-height: 50px;
   min-width: 216px;
     font-size: 16px;
   }
   }
-}
 }
 
 .hero-section__modal-button {

@@ -2,6 +2,10 @@
   display: flex;
   max-width: 170px;
   max-height: 92px;
+  @media (min-width: 1140px) {
+    width: 170px;
+    height: 92px;
+  }
   border: 1px solid $--icon-color;
   border-radius: 4px;
   fill: $--icon-color;
@@ -30,9 +34,6 @@
     fill: $--accent-text-color;
     border-color: $--accent-text-color;
   }
-}
-.clients-section__container {
-  
 }
 
 .clients-section__list-item {

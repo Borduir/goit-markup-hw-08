@@ -54,7 +54,7 @@
     margin-right: 30px;
   }
 }
-  @media (max-width: 1140px) {
+  @media (min-width: 768px) and (max-width: 1140px) {
     max-width: 354px;
     
   &:nth-child(-n+2) {

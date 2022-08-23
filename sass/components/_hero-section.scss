@@ -18,14 +18,14 @@
   color: $--primary-white-color;
   text-transform: uppercase;
   text-align: center;
-    margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
-    padding: 0;
+  padding: 0;
   margin-top: 0;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-@media (max-width: 1139px) {
+@media (max-width: 1140px) {
   .hero-section__container {
     display: flex;
     flex-direction: column;
@@ -34,9 +34,9 @@
     justify-content: center;
     align-items: center;
   }
-.hero-section {
-  padding: 0;
-}
+  .hero-section {
+    padding: 0;
+  }
 }
 
 @media (max-width: 1139px) {
@@ -47,17 +47,21 @@
 }
 
 @media (min-width: 1140px) {
-.hero-section__main-title {
-  max-width: 696px;  
-  font-size: 44px;
-  .hero-section__modal-button {
-    min-height: 50px;
-  min-width: 216px;
-    font-size: 16px;
-  }
+  .hero-section__main-title {
+    max-width: 696px;
+    font-size: 44px;
   }
 }
 
+@media (min-width: 768px) {
+  .hero-section__modal-button {
+    min-height: 50px;
+    min-width: 216px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .hero-section__modal-button {
   display: flex;
   font-family: inherit;
@@ -83,6 +87,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 5;
   &--hidden {
     opacity: 0;
     pointer-events: none;
@@ -91,16 +96,23 @@
 
 .modal-container {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 76.5vh;
   background-color: $--primary-white-color;
   border-radius: 4px;
   padding: 40px;
+  z-index: 10;
+@media (max-width: 1139px) {
+    width: 450px;
+    height: 100hv;
 }
+  @media (min-width: 1140px) {
+    min-width: 528px;
+  }
+}
+
 
 .modal-form {
   width: 100%;
@@ -180,15 +192,20 @@
 
 .modal-form__checkbox-icon {
   position: absolute;
-  left: 0;
-  @media (min-width: 1140) {
-  left: 12px;
-  }
-  bottom: 5px;
   &--checked {
     visibility: hidden;
   }
+  @media (max-width: 1139px) {
+  left: 0;
+  bottom: 5px;
+  }
+  @media (min-width: 1140px) {
+    left: 12px;
+    bottom: 5px;
 }
+}
+
+
 
 .modal-form__checkbox-input--checked {
   &:checked + .modal-form__checkbox-icon {
@@ -204,9 +221,9 @@
   line-height: 171%;
   letter-spacing: 0.03em;
   margin-left: auto;
-  @media (min-width: 1140) {
+  @media (min-width: 1140px) {
     font-size: 14px;
-    margin-right: 11px;
+      margin-right: 11px;
   }
 }
 

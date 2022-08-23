@@ -370,7 +370,7 @@ button {
   margin-bottom: 30px;
 }
 
-@media (max-width: 1139px) {
+@media (max-width: 1140px) {
   .hero-section__container {
     display: flex;
     flex-direction: column;
@@ -394,10 +394,14 @@ button {
     max-width: 696px;
     font-size: 44px;
   }
-  .hero-section__main-title .hero-section__modal-button {
+}
+@media (min-width: 768px) {
+  .hero-section__modal-button {
     min-height: 50px;
     min-width: 216px;
     font-size: 16px;
+    align-items: center;
+    justify-content: center;
   }
 }
 .hero-section__modal-button {
@@ -423,6 +427,7 @@ button {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 5;
 }
 .backdrop--hidden {
   opacity: 0;
@@ -431,15 +436,25 @@ button {
 
 .modal-container {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 76.5vh;
   background-color: #ffffff;
   border-radius: 4px;
   padding: 40px;
+  z-index: 10;
+}
+@media (max-width: 1139px) {
+  .modal-container {
+    width: 450px;
+    height: 100hv;
+  }
+}
+@media (min-width: 1140px) {
+  .modal-container {
+    min-width: 528px;
+  }
 }
 
 .modal-form {
@@ -525,16 +540,21 @@ button {
 
 .modal-form__checkbox-icon {
   position: absolute;
-  left: 0;
-  bottom: 5px;
-}
-@media (min-width: 1140) {
-  .modal-form__checkbox-icon {
-    left: 12px;
-  }
 }
 .modal-form__checkbox-icon--checked {
   visibility: hidden;
+}
+@media (max-width: 1139px) {
+  .modal-form__checkbox-icon {
+    left: 0;
+    bottom: 5px;
+  }
+}
+@media (min-width: 1140px) {
+  .modal-form__checkbox-icon {
+    left: 12px;
+    bottom: 5px;
+  }
 }
 
 .modal-form__checkbox-input--checked:checked + .modal-form__checkbox-icon {
@@ -550,7 +570,7 @@ button {
   letter-spacing: 0.03em;
   margin-left: auto;
 }
-@media (min-width: 1140) {
+@media (min-width: 1140px) {
   .modal-form__checkbox-data {
     font-size: 14px;
     margin-right: 11px;
@@ -633,7 +653,7 @@ button {
     max-width: 450px;
   }
 }
-@media (min-width: 1139px) {
+@media (min-width: 1140px) {
   .qalities-section__icon-container {
     max-width: 270px;
   }

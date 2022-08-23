@@ -5,7 +5,7 @@
 }
 
 .page-footer__container {
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     max-width: 480px;
   margin-right: auto;
   margin-left: auto;
@@ -15,7 +15,7 @@
 }
 
 .page-footer__vertical-container {
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     max-width: 216px;
   margin-right: auto;
   margin-left: auto;
@@ -64,7 +64,7 @@
   margin-right: 93px;
   margin-left: 70px;
   margin-bottom: auto;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     max-width: 216px;
     text-align: center;
   margin-right: auto;
@@ -115,7 +115,7 @@
   margin-right: 12px;
   padding-left: 16px;
   }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   width: 100%;
 }
   background: inherit;
@@ -159,7 +159,7 @@
   margin-left: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .page-footer__subscribe-section {
     text-align: center;
   }

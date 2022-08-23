@@ -2,6 +2,10 @@
   background-color: $--secondary-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media (min-width: 768px) and (max-width:1140px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .page-footer__container {
@@ -21,6 +25,30 @@
   margin-left: auto;
     text-align: center;
   }
+    }
+  @media (min-width: 768px) and (max-width:1140px) {
+    .page-footer__vertical-container {
+      max-width: 232px;
+    }
+    .page-footer__socials-section {
+      max-width: 232px;
+    }
+    .page-footer__top-container {
+      display: flex;
+      justify-content: space-around;
+    }
+    .page-footer__subscribe-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 60px;
+    }
+}
+@media (min-width: 1140px) {
+.page-footer__top-container {
+      display: flex;
+}
 }
 
 .page-footer__logo--white-text {
@@ -60,10 +88,12 @@
 }
 
 .page-footer__socials-section {
+  @media (min-width: 1140px) {
   margin-top: 12px;
   margin-right: 93px;
   margin-left: 70px;
   margin-bottom: auto;
+  }
   @media (max-width: 768px) {
     max-width: 216px;
     text-align: center;
@@ -110,6 +140,10 @@
 
 .subscribe-section__input {
     height: 50px;
+@media (min-width: 768px) and (max-width:1140px)  {
+  width: 450px;
+}
+
   @media (min-width: 1140px) {
       width: 358px;
   margin-right: 12px;
@@ -159,12 +193,13 @@
   margin-left: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1140px) {
   .page-footer__subscribe-section {
     text-align: center;
   }
   .subscribe-section__submit-button {
     margin-right: auto;
     margin-left: auto;
+    margin-top: 20px;
   }
 }

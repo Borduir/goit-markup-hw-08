@@ -25,13 +25,13 @@
           <span class="logo--blue-text">Web</span
           ><span class="header__logo--black-text">Studio</span>
         </a>
-        <button type="button" class="page-header__menu-button is-open" data-menu-button aria-expanded="false">
+        <button type="button" class="page-header__menu-button" data-menu-button aria-expanded="false">
           <svg class="page-header__menu-svg" width="40px" height="40px" area-label="Переключатель мобильного меню">
             <use class="icon-menu" href="./images/icons.svg#icon-menu"/>
             <use class="icon-cross" href="./images/icons.svg#icon-close-modal"/>
           </svg>
         </button>
-        <div class="page-header__menu-container is-open" data-menu>
+        <div class="page-header__menu-container" data-menu>
           <nav>
           <!-- about -->
           <ul class="menu-nav__list">
@@ -538,7 +538,8 @@
     <!-- Footer -->
     <footer class="page-footer">
       <div class="page-footer__container container">
-       <div class="page-footer__vertical-container vertical-container">
+        <div class="page-footer__top-container">
+          <div class="page-footer__vertical-container vertical-container">
          <a class="logo page-footer__logo" href="./index.html">
           <span class="logo--blue-text">Web</span
           ><span class="page-footer__logo--white-text">Studio</span>
@@ -568,7 +569,7 @@
             </ul>
           </address>
         </div>
-      <section class="page-footer__socials-section">
+          <section class="page-footer__socials-section">
                 <p class="page-footer__text">присоединяйтесь</p>
                         <ul class="socials-section__list">
                   <li>
@@ -596,19 +597,20 @@
                         </svg></a>
                   </li>
                 </ul>
-      </section>
-      <section class="page-footer__subscribe-section vertical-container">
-        <p class="page-footer__text">Подпишитесь на рассылку</p>
-        <form>
-          <label class="subscribe-section__container">
-            <input class="subscribe-section__input" type="email" placeholder="Email">
-        <button class="subscribe-section__submit-button submit-button" type="submit">Подписаться<svg class="submit-button__svg" width="24" height="24">
-          <use href="./images/icons.svg#icon-subscribe">
-        </svg> </button>
-      </input>
-          </label>
-        </form>
-      </section>
+            </section>
+        </div>
+            <section class="page-footer__subscribe-section vertical-container">
+              <p class="page-footer__text">Подпишитесь на рассылку</p>
+              <form>
+                <label class="subscribe-section__container">
+                  <input class="subscribe-section__input" type="email" placeholder="Email">
+              <button class="subscribe-section__submit-button submit-button" type="submit">Подписаться<svg class="submit-button__svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe">
+              </svg> </button>
+            </input>
+                </label>
+              </form>
+            </section>
     </div>
     </footer>
       <script src="./js/mobile-menu.js"></script>

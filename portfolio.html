@@ -25,7 +25,62 @@
           <span class="logo--blue-text">Web</span
           ><span class="header__logo--black-text">Studio</span>
         </a>
-        <nav>
+        <button type="button" class="page-header__menu-button" data-menu-button aria-expanded="false">
+          <svg class="page-header__menu-svg" width="40px" height="40px" area-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"/>
+            <use class="icon-cross" href="./images/icons.svg#icon-close-modal"/>
+          </svg>
+        </button>
+        <div class="page-header__menu-container" data-menu>
+          <nav>
+          <!-- about -->
+          <ul class="menu-nav__list">
+            <li class="menu-nav__list-item">
+              <a class="nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="menu-nav__list-item">
+              <a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu-nav__list-item">
+              <a class="nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          </nav>
+          <!-- Contacts -->
+          <div>
+            <ul class="menu-contact__list">
+            <li class="contact__list-item">
+              <a class="contact__link contact__link-number" href="mailto:info@devstudio.com"
+                ><svg class="contact__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"/>
+              </svg>info@devstudio.com</a
+              >
+            </li>
+            <li class="contact__list-item">
+              <a class="contact__link contact__link-mail" href="tel:+380961111111"
+                ><svg class="contact__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-phone"/>
+              </svg>+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__socials-list">
+            <li class="mobile-menu__socials-item">
+              <a href="" class="mobile-menu__socials-link">Instagram</a>
+            </li>
+            <li class="mobile-menu__socials-item">
+              <a href="" class="mobile-menu__socials-link">Twitter</a>
+            </li>
+            <li class="mobile-menu__socials-item">
+              <a href="" class="mobile-menu__socials-link">Facebook</a>
+            </li>
+            <li class="mobile-menu__socials-item">
+              <a href="" class="mobile-menu__socials-link last">LinkedIn</a>
+            </li>
+          </ul>
+          </div>
+          </div>
+        <nav class="page-header__nav">
           <!-- about -->
           <ul class="nav__list">
             <li class="nav__list-item">
@@ -244,8 +299,9 @@
     </main>
     <!-- Footer -->
     <footer class="page-footer">
-      <div class="container">
-       <div class="vertical-container">
+      <div class="page-footer__container container">
+        <div class="page-footer__top-container">
+          <div class="page-footer__vertical-container vertical-container">
          <a class="logo page-footer__logo" href="./index.html">
           <span class="logo--blue-text">Web</span
           ><span class="page-footer__logo--white-text">Studio</span>
@@ -275,7 +331,7 @@
             </ul>
           </address>
         </div>
-      <section class="page-footer__socials-section">
+          <section class="page-footer__socials-section">
                 <p class="page-footer__text">присоединяйтесь</p>
                         <ul class="socials-section__list">
                   <li>
@@ -303,20 +359,23 @@
                         </svg></a>
                   </li>
                 </ul>
-      </section>
-      <section class="page-footer__subscribe-section vertical-container">
-        <p class="page-footer__text">Подпишитесь на рассылку</p>
-        <form>
-          <label class="subscribe-section__container">
-            <input class="subscribe-section__input" type="email" placeholder="Email">
-        <button class="submit-button" type="submit">Подписаться<svg class="submit-button__svg" width="24" height="24">
-          <use href="./images/icons.svg#icon-subscribe">
-        </svg> </button>
-      </input>
-          </label>
-        </form>
-      </section>
+            </section>
+        </div>
+            <section class="page-footer__subscribe-section vertical-container">
+              <p class="page-footer__text">Подпишитесь на рассылку</p>
+              <form>
+                <label class="subscribe-section__container">
+                  <input class="subscribe-section__input" type="email" placeholder="Email">
+              <button class="subscribe-section__submit-button submit-button" type="submit">Подписаться<svg class="submit-button__svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe">
+              </svg> </button>
+            </input>
+                </label>
+              </form>
+            </section>
     </div>
     </footer>
+      <script src="./js/mobile-menu.js"></script>
+      <script src="./js/modal.js"></script>
   </body>
 </html>

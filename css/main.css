@@ -923,9 +923,9 @@ button {
   }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 768px) {
   .clients-section__container {
-    flex-direction: column;
+    width: 480px;
   }
 }
 @media (min-width: 768px) and (max-width: 1140px) {

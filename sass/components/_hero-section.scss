@@ -27,7 +27,7 @@
         background-image: url(../images/hero-imgtablet_2x.jpg);
       }
     }
-    @media (min-width: 1140px) {
+    @media (min-width: 1200px) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero-img.jpg);
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -53,7 +53,7 @@
   margin-bottom: 30px;
 }
 
-@media (min-width: 768px) and (max-width: 1140px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .hero-section__container {
     max-width: 768px;
   }
@@ -64,25 +64,25 @@
   }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1200px) {
   .hero-section__container {
     height: 400px;
   }
 }
-@media (min-width: 1140px) {
+@media (min-width: 1200px) {
   .hero-section__container {
     height: 600px;
   }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1200px) {
   .hero-section__main-title {
     max-width: 360px;
     font-size: 26px;
   }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1200px) {
   .hero-section__main-title {
     max-width: 696px;
     font-size: 44px;
@@ -139,11 +139,11 @@
   border-radius: 4px;
   padding: 40px;
   z-index: 10;
-  @media (max-width: 1140px) {
+  @media (max-width: 1200px) {
     width: 450px;
     height: 100hv;
   }
-  @media (min-width: 1140px) {
+  @media (min-width: 1200px) {
     min-width: 528px;
   }
 }
@@ -229,11 +229,11 @@
   &--checked {
     visibility: hidden;
   }
-  @media (max-width: 1140px) {
+  @media (max-width: 1200px) {
     left: 0;
     bottom: 5px;
   }
-  @media (min-width: 1140px) {
+  @media (min-width: 1200px) {
     left: 12px;
     bottom: 5px;
   }
@@ -253,7 +253,7 @@
   line-height: 171%;
   letter-spacing: 0.03em;
   margin-left: auto;
-  @media (min-width: 1140px) {
+  @media (min-width: 1200px) {
     font-size: 14px;
     margin-right: 11px;
   }

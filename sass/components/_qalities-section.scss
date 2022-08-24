@@ -1,5 +1,5 @@
 .qalities-section {
-  @media (min-width: 1140px) {
+  @media (min-width: 1200px) {
     padding-bottom: 0;
   }
 }
@@ -37,7 +37,7 @@
 }  
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1200px) {
   .qalities-section__icon-container {
   max-width: 270px;
   }
@@ -59,7 +59,7 @@
   display: flex;
 }
 
-@media (min-width: 768px) and (max-width:1140px) {
+@media (min-width: 768px) and (max-width:1200px) {
   .qalities-section__list {
   display: flex;
   justify-content: center;

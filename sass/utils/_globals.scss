@@ -32,7 +32,7 @@ h6 {
   color: $--title-text-color;
 }
 .section {
-  @media (max-width: 1140px) {
+  @media (max-width: 1200px) {
     padding-top: 60px;
     padding-bottom: 60px;
     margin-left: auto;
@@ -51,15 +51,15 @@ h6 {
   @media (max-width: 768px) {
     max-width: 480px;
   }
-  @media (min-width: 768px) and (max-width: 1140px) {
+  @media (min-width: 768px) and (max-width: 1200px) {
     max-width: 768px;
   }
-  @media (min-width: 1140px) {
-    max-width: 1140px;
+  @media (min-width: 1200px) {
+    max-width: 1200px;
   }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -97,7 +97,7 @@ button {
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
-  @media (max-width: 1140px) {
+  @media (max-width: 1200px) {
     font-size: 28px;
   }
 }

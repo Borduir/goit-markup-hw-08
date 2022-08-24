@@ -4,11 +4,20 @@
   }
 }
 
+.qalities-section__container {
+  @media (min-width: 768px) and (max-width: 1140px) {
+    min-width: 800px;
+  }
+}
+
 .qalities-section__title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .qalities-section__data {
@@ -38,10 +47,7 @@
   .qalities-section__icon-container {
   max-width: 270px;
   }
-  .qalities-section__container {
-  display: flex;
-  justify-content: center;
-}
+
 .qalities-section__list {
   display: flex;
 }
@@ -75,3 +81,9 @@
   }
 }
   }
+
+@media (max-width: 768px) {
+  .qalities-section__list-item:not(:last-child) {
+margin-bottom: 30px;
+  }
+}  

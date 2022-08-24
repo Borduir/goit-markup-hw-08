@@ -2,25 +2,20 @@
   background-color: $--secondary-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
-  @media (min-width: 768px) and (max-width:1140px) {
+
+}
+
+
+.page-footer__container {
+  @media (max-width:1140px) {
     display: flex;
     flex-direction: column;
   }
 }
 
-.page-footer__container {
-@media (max-width: 768px) {
-    max-width: 480px;
-  margin-right: auto;
-  margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
 
 .page-footer__vertical-container {
   @media (max-width: 768px) {
-    max-width: 216px;
   margin-right: auto;
   margin-left: auto;
     text-align: center;
@@ -28,10 +23,10 @@
     }
   @media (min-width: 768px) and (max-width:1140px) {
     .page-footer__vertical-container {
-      max-width: 232px;
+      margin: 0 auto;
     }
     .page-footer__socials-section {
-      max-width: 232px;
+      margin: 0 auto;
     }
     .page-footer__top-container {
       display: flex;
@@ -95,7 +90,6 @@
   margin-bottom: auto;
   }
   @media (max-width: 768px) {
-    max-width: 216px;
     text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -106,7 +100,7 @@
 
 .socials-section__list {
   display: flex;
-}
+  justify-content: center;
 
 .socials-section__link {
   display: flex;
@@ -127,6 +121,7 @@
     background-color: $--accent-text-color;
   }
 }
+}
 
 @media (min-width: 1140px) {
 .page-footer__subscribe-section {
@@ -140,7 +135,7 @@
 
 .subscribe-section__input {
     height: 50px;
-@media (min-width: 768px) and (max-width:1140px)  {
+@media (max-width:1140px) {
   width: 450px;
 }
 
@@ -149,9 +144,6 @@
   margin-right: 12px;
   padding-left: 16px;
   }
-@media (max-width: 768px) {
-  width: 100%;
-}
   background: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -201,5 +193,11 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
+  }
+}
+
+.page-footer__subscribe-section {
+  @media (max-width: 1140px) {
+    padding: 0;
   }
 }
